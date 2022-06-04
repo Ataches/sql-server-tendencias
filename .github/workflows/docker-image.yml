@@ -27,7 +27,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: ./
-        file: ./DockerFile
+        file: ./dockerfile
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/sql-server:latest
         
